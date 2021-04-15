@@ -7,7 +7,7 @@
 }
 
 body {
-  background: yellow;
+  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -16,6 +16,7 @@ nav {
   width: 100%;
   height: 10%;
   background: blue;
+  border: 2px solid #1a2833;
 }
 
 nav .nav--center {
@@ -32,8 +33,11 @@ nav .nav--center {
           align-items: center;
 }
 
+nav .nav--center h4 {
+  font-family: 'Nosifer', cursive;
+}
+
 nav .nav--center .nav--links {
-  background: green;
   width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,10 +48,25 @@ nav .nav--center .nav--links {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  text-decoration: none;
+}
+
+nav .nav--center .nav--links a:link, nav .nav--center .nav--links a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #1a2833;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav .nav--center .nav--links a:hover, nav .nav--center .nav--links a:active {
+  background-color: #1a2833;
+  color: white;
 }
 
 main {
-  background: white;
   width: 100%;
   height: 90%;
   display: -webkit-box;
@@ -59,13 +78,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid #1a2833;
 }
 
 main .container {
   width: 50%;
   height: 30%;
   background: #1a2833;
-  border-radius: 73% 27% 76% 24% / 63% 46% 54% 37%;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,18 +102,24 @@ main .container {
 }
 
 main .container h2 {
-  font-family: 'Nosifer', cursive;
+  width: 25%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  letter-spacing: 2.5px;
   margin: 20px;
 }
 
 main .container button {
   width: 20%;
   height: 15%;
+  border: 2px solid white;
+  background: #1a2833;
+  color: white;
 }
 
 main .container .color {
   color: #F1f5f8;
   letter-spacing: 1.5px;
-  font-family: 'Courier New', Courier, monospace;
 }
 /*# sourceMappingURL=style.css.map */
